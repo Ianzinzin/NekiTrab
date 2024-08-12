@@ -1,0 +1,102 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 20px;
+}
+
+.bemVindo p {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+}
+
+.opcoes {
+  display: flex;
+  gap: 20px;
+  font-size: 16px;
+}
+
+.opcoes li {
+  cursor: pointer;
+  color: #007bff;
+}
+
+.opcoes li:hover {
+  text-decoration: underline;
+}
+
+.icon {
+  font-size: 20px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.icon:hover {
+  opacity: 0.7;
+}
+
+.contentArea {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.renderError {
+  text-align: center;
+  font-size: 18px;
+  color: #d9534f;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.modalAtribuir {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.dropdown, .dropdownSkill {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 60px;
+  width: 200px;
+  z-index: 1000;
+}
+
+.dropdown ul, .dropdownSkill ul {
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.dropdown li, .dropdownSkill li {
+  padding: 10px;
+  cursor: pointer;
+  color: #007bff;
+}
+
+.dropdown li:hover, .dropdownSkill li:hover {
+  background-color: #f1f1f1;
+}

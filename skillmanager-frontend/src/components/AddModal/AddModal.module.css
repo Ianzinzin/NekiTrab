@@ -1,0 +1,96 @@
+.containerModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.conteudoModal {
+    background-color: #f9f9f9;
+    width: 40vw;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+select {
+    width: 70%;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.closeIcon {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.showList {
+    max-height: 40vh;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.configurar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 1rem;
+    color: #333;
+}
+
+.nivelArea {
+    display: flex;
+    align-items: center;
+}
+
+.nivelArea button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.botaoRemover {
+    cursor: pointer;
+    color: #e74c3c;
+}
+
+.buttonArea {
+    text-align: right;
+}
+
+.buttonArea button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.buttonArea button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
